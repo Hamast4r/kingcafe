@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -93,7 +93,7 @@
     </header>
     <nav>
         <button onclick="showSection(0)" class="active">نێرگەلەکان</button>
-        <button onclick="showSection(1)"class="active">خواردن</button>
+        <button onclick="showSection(1)">خواردن</button>
         <button onclick="showSection(2)">Section 3</button>
         <button onclick="showSection(3)">Section 4</button>
         <button onclick="showSection(4)">Section 5</button>
@@ -142,27 +142,76 @@
                 <li>کاسترۆ</li>
                 <li>لیمۆ</li>
             </ul>
-            
         </div>
-        <div class="section">
+        <div class="section active">
             <h2>Section 3</h2>
-            <p>Content for section 3</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
         </div>
-        <div class="section">
+        <div class="section active">
             <h2>Section 4</h2>
-            <p>Content for section 4</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
         </div>
-        <div class="section">
+        <div class="section active">
             <h2>Section 5</h2>
-            <p>Content for section 5</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
         </div>
-        <div class="section">
+        <div class="section active">
             <h2>Section 6</h2>
-            <p>Content for section 6</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
         </div>
-        <div class="section">
+        <div class="section active">
             <h2>Section 7</h2>
-            <p>Content for section 7</p>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
         </div>
     </div>
 
