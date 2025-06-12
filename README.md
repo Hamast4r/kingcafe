@@ -11,17 +11,21 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: #444;
         }
+
         nav button {
             background-color: #444;
             color: white;
@@ -29,24 +33,57 @@
             padding: 15px 20px;
             cursor: pointer;
             font-size: 16px;
+            flex: 1 1 auto;
+            min-width: 120px;
         }
-        nav button:hover {
+
+        nav button:hover,
+        nav button.active {
             background-color: #666;
         }
+
         .section {
             display: none;
             padding: 20px;
         }
+
         .active {
             display: block;
         }
+
         ul {
             list-style: none;
             padding: 0;
         }
+
         ul li {
             margin: 10px 0;
             font-size: 18px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav button {
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            ul li {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            header {
+                font-size: 20px;
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -55,7 +92,7 @@
         <h1>King Cafe</h1>
     </header>
     <nav>
-        <button onclick="showSection(0)">نێرگەلەکان</button>
+        <button onclick="showSection(0)" class="active">نێرگەلەکان</button>
         <button onclick="showSection(1)">Section 2</button>
         <button onclick="showSection(2)">Section 3</button>
         <button onclick="showSection(3)">Section 4</button>
@@ -114,8 +151,14 @@
     <script>
         function showSection(index) {
             const sections = document.querySelectorAll('.section');
+            const buttons = document.querySelectorAll('nav button');
+
             sections.forEach((section, i) => {
                 section.classList.toggle('active', i === index);
+            });
+
+            buttons.forEach((btn, i) => {
+                btn.classList.toggle('active', i === index);
             });
         }
     </script>
