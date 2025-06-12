@@ -93,7 +93,7 @@
     </header>
     <nav>
         <button onclick="showSection(0)" class="active">نێرگەلەکان</button>
-        <button onclick="showSection(1)">Section 2</button>
+        <button onclick="showSection(1)"class="active">خواردن</button>
         <button onclick="showSection(2)">Section 3</button>
         <button onclick="showSection(3)">Section 4</button>
         <button onclick="showSection(4)">Section 5</button>
@@ -117,14 +117,32 @@
                 <li>King 11</li>
                 <li>Dw Sew</li>
                 <li>بنیشت</li>
-                <li>Baghdadi</li>
+                <li>بغدادی</li>
                 <li>کاسترۆ</li>
                 <li>لیمۆ</li>
             </ul>
         </div>
-        <div class="section">
-            <h2>Section 2</h2>
-            <p>Content for section 2</p>
+        <div class="section active">
+            <h2>خواردن</h2>
+            <ul>
+                <li>King 1</li>
+                <li>King 2</li>
+                <li>King 3</li>
+                <li>King 4</li>
+                <li>King 5</li>
+                <li>King 6</li>
+                <li>King 7</li>
+                <li>King 8</li>
+                <li>King 9</li>
+                <li>King 10</li>
+                <li>King 11</li>
+                <li>Dw Sew</li>
+                <li>بنیشت</li>
+                <li>بغدادی</li>
+                <li>کاسترۆ</li>
+                <li>لیمۆ</li>
+            </ul>
+            
         </div>
         <div class="section">
             <h2>Section 3</h2>
